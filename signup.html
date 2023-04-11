@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amshuhu signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <img src="amslogo.png" alt="amshuhu" width="50px" height="45px"></div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="signup.html">Signup</a>
+            <a href="one.html">Login</a>
+            <a href="profile.html">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav>
+    
+        <div class="container">
+        <div class="loginform">
+        <h2>CREATE NEW USER</h2>
+        </div> 
+            <form class="form" action="#" id="form">
+                <div class="inputfield">
+                    <div class="labeling">
+                    <label for="username" >Username</label>
+                </div>
+            
+                    <input type="text" placeholder="enter name" name="username" id="username" >
+               
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> 
+                    <small>errorMsg</small>    
+                </div>
+                <div class="inputfield">
+                    <div class="labeling">
+                    <label for="emailid" >Email</label>
+                </div>
+             
+                    <input type="email" placeholder="enter email" name="emailid" id="emailid">
+                
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>   
+                    <small>errorMsg</small>  
+                </div>
+                <div class="inputfield">
+                    <div class="labeling">
+                    <label for="password" >Password</label>
+                </div>
+               
+                    <input type="password" placeholder="enter password" name="password" id="password">
+                    
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>  
+                    <small>errorMsg</small>  
+                    
+                    <div class="showpassword">
+                        <label>Show Password</label>
+                        <input type="checkbox" onclick="myfunction()" id="showpassword" >
+                    </div> 
+                </div>
+                
+                <div class="inputfield">
+                    <div class="labeling">
+                    <label for="confirmpassword" >Confirm Password</label>
+                </div>
+               
+                    <input type="password" placeholder="Re-enter password" name="confirmpassword" id="confirmpassword">
+                    
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>  
+                    <small>errorMsg</small>   
+                </div>
+                
+                
+                    <button type="submit" class="button" >Signup</button>
+                    <span>Already a user?<a href="one.html">login</a></span>
+                
+            </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
